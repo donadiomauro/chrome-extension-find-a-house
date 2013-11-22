@@ -1,0 +1,43 @@
+{
+    // Required
+    "manifest_version": 2,
+    "name": "Quarantine",
+    "version": "1.0",
+    "author": "Mauro Donadio",
+
+    // Recommended
+    //"default_locale": "en",
+    "description": "Quarantine - Mauro Donadio",
+    "icons": {
+        "16": "images/on16.png",
+        "48": "images/on48.png",
+        "128": "images/on128.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "19": "images/on19.png",
+            "38": "images/on38.png"
+        },
+        "default_title": "Quarantine",
+        "default_popup": "popup.htm"
+    },
+
+    "background": {
+        "scripts": ["js/jquery-1.10.2.js","js/quarantine.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                        "http://www.spareroom.co.uk/*",
+                        "http://www.intolondon.com/*",
+                        "http://www.rightmove.co.uk/*",
+                        "http://www.gumtree.com/*"
+                        ],
+            "js": ["js/jquery-1.10.2.js","js/quarantine.js","js/spareroomCOUK.js", "js/intolondonCOM.js", "js/rightmoveCOUK.js", "js/gumtreeCOM.js"],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+#DNDquarantine{
+    font-family:    Verdana, Arial, sans-serif;
+    font-size:      0.75em;
+
+    width:          400px;
+}
+
+#DNDquarantine ul{
+    padding:        0px;
+    margin:         0px;
+
+    list-style:     none;
+}
+
+#DNDquarantine ul li{
+    border-bottom:  1px solid #CCCCCC;
+}
+#DNDquarantine ul li label{
+    padding:        10px;
+    display:        block;
+    cursor:         pointer;
+
+    border:         1px solid transparent;
+}
+
+#DNDquarantine ul li label:hover{
+    background:         #FFF8DC;
+    /*
+    -moz-border-radius:     2px;
+    -webkit-border-radius:  2px;
+    -khtml-border-radius:   2px;
+    border-radius:          2px;
+    */
+}
+
+#DNDquarantine input[type=submit],  #DNDquarantine button{
+    cursor:             pointer;
+    padding:            10px;
+    background:         #F7F7F7;
+    display:            block;
+    width:              100%;
+    border:             1px solid #CCCCCC;
+
+    -moz-border-radius:     2px;
+    -webkit-border-radius:  2px;
+    -khtml-border-radius:   2px;
+    border-radius:          2px;
+}
+
+#status{
+    /*
+    background:         #e5f1fd;
+    border:             1px solid lightblue;
+    */
+    height:             24px;
+    line-height:        24px;
+    width:              24px;
+    text-align:         center;
+    display:            none;
+    position:           absolute;
+    right:              5px;
+    top:                5px;
+    color:              #000000;
+    background-image:   url(../images/saved.png);
+    background-repeat:  no-repeat;
+}
